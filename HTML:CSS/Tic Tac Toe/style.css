@@ -1,0 +1,23 @@
+h1 {
+	display: flex;
+	justify-content: center;
+	align-itmes: flex-start;
+}
+div {
+	display: flex;
+	justify-content: center;
+}
+td {
+	width: 100px;
+	height: 100px;
+}
+
+.vertical {
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+}
+
+.horizontal {
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+}
