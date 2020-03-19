@@ -1,14 +1,18 @@
 // creat secretNumber
 var secretNumber = 4;
 
-var guess = 0;
+var guess = Number(prompt("Guess a number"));
+var flag = false;
 
 //check guess if guess is right
-while (guess ==! secretNumber) {
+while (!flag) {
     
-    // ask user for guess 
-    guess = Number(prompt("Guess a number"));
-
+    console.log(guess);
+    
+    if (guess === secretNumber) {
+        alert("You got it right!");
+        flag = ture;
+    }
     // otherwise, check if higher
     if (guess > secretNumber){
         alert("too high, guess again!");
@@ -17,8 +21,8 @@ while (guess ==! secretNumber) {
     else {
         alert("too low, guess again!");
     }
+    // ask user for guess 
+    guess = Number(prompt("Guess a number"));
 
 };
-if (guess === secretNumber) {
-    alert("You got it right!");
-}
+console.log(guess);
